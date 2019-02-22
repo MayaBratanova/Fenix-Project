@@ -1,0 +1,53 @@
+$(document).ready(function () {
+    var termostatRoor = '/sites/all/themes/fenix/termostat';
+
+    $('body').append(
+        '<div class="termostat-overlay"></div>'
+        + '<div class="termostat-player">'
+        + '<div class="t-container"><img src="/sites/all/themes/fenix/termostat/images/wall-bg.jpg" class="background"><img src="/sites/all/themes/fenix/termostat/images/wall-00.jpg" class="wall-bg"><img src="/sites/all/themes/fenix/termostat/images/shadow.png" class="shadow"><img src="/sites/all/themes/fenix/termostat/images/aplikace-tlacitka-podklad.png" class="btn-background"><img src="/sites/all/themes/fenix/termostat/images/frame-0.png" class="frame"><img src="/sites/all/themes/fenix/termostat/images/case-0.png" class="case"><img src="/sites/all/themes/fenix/termostat/images/display-0.png" class="display"><img src="/sites/all/themes/fenix/termostat/images/wall-ico.png" class="wall-ico">'
+        + '<button class="btn-line-0 coll-1 thermostat-btn active frame-0" data-frame="frame-0"></button><button class="btn-line-0 coll-2 thermostat-btn active case-0" data-case="case-0"></button><button class="btn-line-0 coll-3 thermostat-btn active display-0" data-display="display-0"></button><button class="btn-line-1 coll-1 thermostat-btn frame-1" data-frame="frame-1"></button><button class="btn-line-1 coll-2 thermostat-btn case-1" data-case="case-1"></button><button class="btn-line-1 coll-3 thermostat-btn display-1" data-display="display-1"></button><button class="btn-line-2 coll-1 thermostat-btn frame-2" data-frame="frame-2"></button><button class="btn-line-2 coll-2 thermostat-btn case-2" data-case="case-2"></button><button class="btn-line-2 coll-3 thermostat-btn display-2" data-display="display-2"></button><button class="btn-line-3 coll-1 thermostat-btn frame-3" data-frame="frame-3"></button><button class="btn-line-3 coll-2 thermostat-btn case-3" data-case="case-3"></button><button class="btn-line-3 coll-3 thermostat-btn display-3" data-display="display-3"></button> <button class="btn-wall btn-wall-00 active" data-wall="wall-00"></button>'
+        + '<button class="btn-wall btn-wall-01" data-wall="wall-01"></button>       <button class="btn-wall btn-wall-02" data-wall="wall-02"></button><button class="btn-wall btn-wall-03" data-wall="wall-03"></button><button class="btn-wall btn-wall-04" data-wall="wall-04"></button><button class="btn-wall btn-wall-05" data-wall="wall-05"></button><button class="btn-wall btn-wall-06" data-wall="wall-06"></button><button class="btn-wall btn-wall-07" data-wall="wall-07"></button><button class="btn-wall btn-wall-08" data-wall="wall-08"></button><button class="btn-wall btn-wall-09" data-wall="wall-09"></button><button class="btn-wall btn-wall-10" data-wall="wall-10"></button><button class="btn-wall btn-wall-11" data-wall="wall-11"></button><button class="btn-wall btn-wall-12" data-wall="wall-12"></button><button class="btn-wall btn-wall-13" data-wall="wall-13"></button><button class="btn-wall btn-wall-14" data-wall="wall-14"></button><button class="btn-wall btn-wall-15" data-wall="wall-15"></button><button class="btn-wall btn-wall-16" data-wall="wall-16"></button><button class="btn-wall btn-wall-17" data-wall="wall-17"></button><button class="btn-wall btn-wall-18" data-wall="wall-18"></button><button class="btn-wall btn-wall-19" data-wall="wall-19"></button><button class="btn-wall btn-wall-20" data-wall="wall-20"></button><button class="btn-wall btn-wall-21" data-wall="wall-21"></button><button class="btn-wall btn-wall-22" data-wall="wall-22"></button><button class="btn-wall btn-wall-23" data-wall="wall-23"></button><button class="btn-wall btn-wall-24" data-wall="wall-24"></button><button class="btn-wall btn-wall-25" data-wall="wall-25"></button><button class="btn-wall btn-wall-26" data-wall="wall-26"></button><button class="btn-wall btn-wall-27" data-wall="wall-27"></button></div>'
+        + '</div>');
+console.log('thermostat html append');
+
+    $('.btn-wall').click(function () {
+        $('.wall-bg').attr('src', termostatRoor + '/images/' + $(this).data('wall') + '.jpg');
+        $( '.btn-wall' ).each(function() {
+            $( this ).removeClass('active');
+        });
+        $(this).addClass('active');
+    });
+    $('.coll-1').click(function () {
+        $('.frame').attr('src', termostatRoor + '/images/' + $(this).data('frame') + '.png');
+        $( '.coll-1' ).each(function() {
+            $( this ).removeClass('active');
+        });
+        $(this).addClass('active');
+    });
+    $('.coll-2').click(function () {
+        $('.case').attr('src', termostatRoor + '/images/' + $(this).data('case') + '.png');
+        $( '.coll-2' ).each(function() {
+            $( this ).removeClass('active');
+        });
+        $(this).addClass('active');
+    });
+    $('.coll-3').click(function () {
+        $('.display').attr('src', termostatRoor + '/images/' + $(this).data('display') + '.png');
+        $( '.coll-3' ).each(function() {
+            $( this ).removeClass('active');
+        });
+        $(this).addClass('active');
+    });
+
+
+    $('#termostat-open').click(function (e) {
+        $('.termostat-overlay').show(0);
+        $('.termostat-player').show(0);
+        e.preventDefault();
+    });
+    $('.termostat-overlay').click(function (e) {
+        $('.termostat-overlay').hide(0);
+        $('.termostat-player').hide(0);
+        e.preventDefault();
+    });
+});

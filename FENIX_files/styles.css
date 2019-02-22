@@ -1,0 +1,139 @@
+.t-container{position: relative;}
+.t-container .background{position: absolute; z-index: 0; top:0;left: 0;}
+.t-container .wall-bg{position: absolute; z-index: 50; top:0;left: 0;}
+.t-container .btn-background{position: absolute; z-index: 100; top:0;left: 0;}
+.t-container button{position: absolute; z-index: 200;display: block; width: 42px; height: 42px;
+    border-radius: 3px; cursor: pointer; border: 1px solid #666}
+.t-container button:hover{-webkit-box-shadow: 0px 0px 13px 0px rgba(253,157,6,1);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(253,157,6,1);
+    box-shadow: 0px 0px 13px 0px rgba(253,157,6,1);
+    border: 1px solid #FFFFFF}
+.t-container button.active{-webkit-box-shadow: 0px 0px 13px 0px rgba(253,157,6,1);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(253,157,6,1);
+    box-shadow: 0px 0px 13px 0px rgba(253,157,6,1);
+    border: 1px solid #FFFFFF}
+.t-container button.thermostat-btn{width: 67px; height: 80px; border: none; padding: 0;}
+.t-container button.thermostat-btn:hover,.t-container button.thermostat-btn.active{-webkit-box-shadow: 0px 0px 0px 0px rgba(253,157,6,1);
+    -moz-box-shadow:  0px 0px 0px 0px rgba(253,157,6,0);
+    box-shadow: 0px 0px 0px 0px rgba(253,157,6,0);
+    border: none}
+
+.t-container .btn-wall-00{ left:138px; top:496px; background: #fdfdfd;}
+.t-container .btn-wall-01{ left:197px; top:496px; background: #f0e4ef; }
+.t-container .btn-wall-02{ left:256px; top:496px; background: #e5e6f1; }
+.t-container .btn-wall-03{ left:315px; top:496px; background: #e5f3f2; }
+.t-container .btn-wall-04{ left:375px; top:496px; background: #f3f8e7; }
+.t-container .btn-wall-05{ left:434px; top:496px; background: #fefde7; }
+.t-container .btn-wall-06{ left:493px; top:496px; background: #fcf2e3; }
+.t-container .btn-wall-07{ left:552px; top:496px; background: #dcbccd; }
+.t-container .btn-wall-08{ left:611px; top:496px; background: #c2adc0; }
+.t-container .btn-wall-09{ left:671px; top:496px; background: #b5a7bd; }
+.t-container .btn-wall-10{ left:731px; top:496px; background: #b0b2c6; }
+.t-container .btn-wall-11{ left:790px; top:496px; background: #b2bdd0; }
+.t-container .btn-wall-12{ left:850px; top:496px; background: #b1c9c7; }
+.t-container .btn-wall-13{ left:913px; top:496px; background: #c1cfb6; }
+
+.t-container .btn-wall-14{ left:138px; top:549px; background: #cfd6b8; }
+.t-container .btn-wall-15{ left:197px; top:549px; background: #e9e6c0; }
+.t-container .btn-wall-16{ left:256px; top:549px; background: #e0cdb5; }
+.t-container .btn-wall-17{ left:315px; top:549px; background: #d5b3a7; }
+.t-container .btn-wall-18{ left:375px; top:549px; background: #e697bf; }
+.t-container .btn-wall-19{ left:434px; top:549px; background: #be8bbb; }
+.t-container .btn-wall-20{ left:493px; top:549px; background: #a685b9; }
+.t-container .btn-wall-21{ left:552px; top:549px; background: #9095c6; }
+.t-container .btn-wall-22{ left:611px; top:549px; background: #90abd7; }
+.t-container .btn-wall-23{ left:671px; top:549px; background: #93cdc7; }
+.t-container .btn-wall-24{ left:731px; top:549px; background: #b3d397; }
+.t-container .btn-wall-25{ left:790px; top:549px; background: #cfdf98; }
+.t-container .btn-wall-26{ left:850px; top:549px; background: #fcf49b; }
+.t-container .btn-wall-27{ left:913px; top:549px; background: #f2c589; }
+
+
+.t-container .shadow{position: absolute; z-index: 200; top:0px;left: 0px;}
+.t-container .frame{position: absolute; z-index: 300; top:206px;left: 517px;}
+.t-container .case{position: absolute; z-index: 300; top:204px;left: 526px;}
+.t-container .display{position: absolute; z-index: 300; top:249px;left: 559px;}
+
+.t-container .case-ico-0{position: absolute; z-index: 200; left: 66px; top:30px;}
+.t-container .case-ico-1{position: absolute; z-index: 200; left: 151px; top:30px;}
+.t-container .case-ico-2{position: absolute; z-index: 200; left: 236px; top:30px;}
+.t-container .wall-ico{position: absolute; z-index: 200; left:62px; top:514px;}
+
+.t-container .btn-line-0{
+    top:17px;
+}
+.t-container .btn-line-1{
+    top:112px;
+}
+.t-container .btn-line-2{
+    top:207px;
+}
+.t-container .btn-line-3 {
+    top: 302px;
+}
+
+.t-container .btn-display{
+    top:316px;
+
+    background: -moz-linear-gradient(45deg, #6c9ace 0%, #a3bfde 50%, #6c9ace 100%);
+    background: -webkit-linear-gradient(45deg, #6c9ace 0%,#a3bfde 50%,#6c9ace 100%);
+    background: linear-gradient(45deg, #6c9ace 0%,#a3bfde 50%,#6c9ace 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6c9ace', endColorstr='#6c9ace',GradientType=1 );}
+.coll-1{left: 63px}
+.coll-2{left: 149px;}
+.coll-3{left: 235px;}
+
+.display-0{background: url("/sites/all/themes/fenix/termostat/images/display-ico-0.png") no-repeat 50% 50%;}
+.display-1{background: url("/sites/all/themes/fenix/termostat/images/display-ico-1.png") no-repeat 50% 50%;}
+.display-2{background: url("/sites/all/themes/fenix/termostat/images/display-ico-2.png") no-repeat 50% 50%;}
+.display-3{background: url("/sites/all/themes/fenix/termostat/images/display-ico-3.png") no-repeat 50% 50%;}
+
+.frame-0{background: url("/sites/all/themes/fenix/termostat/images/frame-ico-0.png") no-repeat 50% 50%;}
+.frame-1{background: url("/sites/all/themes/fenix/termostat/images/frame-ico-1.png") no-repeat 50% 50%;}
+.frame-2{background: url("/sites/all/themes/fenix/termostat/images/frame-ico-2.png") no-repeat 50% 50%;}
+.frame-3{background: url("/sites/all/themes/fenix/termostat/images/frame-ico-3.png") no-repeat 50% 50%;}
+
+.case-0{background: url("/sites/all/themes/fenix/termostat/images/case-ico-0.png") no-repeat 50% 50%;}
+.case-1{background: url("/sites/all/themes/fenix/termostat/images/case-ico-1.png") no-repeat 50% 50%;}
+.case-2{background: url("/sites/all/themes/fenix/termostat/images/case-ico-2.png") no-repeat 50% 50%;}
+.case-3{background: url("/sites/all/themes/fenix/termostat/images/case-ico-3.png") no-repeat 50% 50%;}
+
+.display-0.active, .display-0:hover{background: url("/sites/all/themes/fenix/termostat/images/display-ico-0-2.png") no-repeat 50% 50%;}
+.display-1.active, .display-1:hover{background: url("/sites/all/themes/fenix/termostat/images/display-ico-1-2.png") no-repeat 50% 50%;}
+.display-2.active, .display-2:hover{background: url("/sites/all/themes/fenix/termostat/images/display-ico-2-2.png") no-repeat 50% 50%;}
+.display-3.active, .display-3:hover{background: url("/sites/all/themes/fenix/termostat/images/display-ico-3-2.png") no-repeat 50% 50%;}
+
+.frame-0.active, .frame-0:hover{background: url("/sites/all/themes/fenix/termostat/images/frame-ico-0-2.png") no-repeat 50% 50%;}
+.frame-1.active, .frame-1:hover{background: url("/sites/all/themes/fenix/termostat/images/frame-ico-1-2.png") no-repeat 50% 50%;}
+.frame-2.active, .frame-2:hover{background: url("/sites/all/themes/fenix/termostat/images/frame-ico-2-2.png") no-repeat 50% 50%;}
+.frame-3.active, .frame-3:hover{background: url("/sites/all/themes/fenix/termostat/images/frame-ico-3-2.png") no-repeat 50% 50%;}
+
+.case-0.active, .case-0:hover{background: url("/sites/all/themes/fenix/termostat/images/case-ico-0-2.png") no-repeat 50% 50%;}
+.case-1.active, .case-1:hover{background: url("/sites/all/themes/fenix/termostat/images/case-ico-1-2.png") no-repeat 50% 50%;}
+.case-2.active, .case-2:hover{background: url("/sites/all/themes/fenix/termostat/images/case-ico-2-2.png") no-repeat 50% 50%;}
+.case-3.active, .case-3:hover{background: url("/sites/all/themes/fenix/termostat/images/case-ico-3-2.png") no-repeat 50% 50%;}
+
+.termostat-overlay {
+    display: none;
+    opacity: 0.8;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5000;
+}
+.termostat-player {
+    display: none;
+    background: #FFF;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -540px;
+    margin-top: -323px;
+    width: 1080px;
+    height: 647px;
+
+    z-index: 5100;
+}

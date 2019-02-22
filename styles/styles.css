@@ -1,0 +1,33 @@
+@import url('reset.css');
+@import url('typography.css');
+@import url('navigation.css');
+
+body {
+	
+	
+}
+
+body > header:first-of-type {
+	/*border-bottom: 2px solid #000;
+	display: flex;
+	justify-content: space-around;
+    flex-wrap: wrap;*/
+    
+    background: #000;
+    
+}
+
+/*header .site-title {
+	min-width: 20vw;
+	font-weight: bold;
+	font-size: 3rem;
+	text-transform: uppercase;
+	padding: 1rem 2rem;
+}*/
+
+main{
+	background: url('../img/guille-pozzi-484826-unsplash.jpg') no-repeat center center;
+	background-size: cover;
+	/* background-attachment: fixed; */
+	height: 100vh;
+}
