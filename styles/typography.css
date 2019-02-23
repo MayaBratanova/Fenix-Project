@@ -1,18 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i&subset=cyrillic,cyrillic-ext,latin-ext');
 html {
-	font: 12px/1.5 Tahoma, Geneva, sans-serif;	
+	font: 12px/1.5 PT Sans, Geneva, sans-serif;	
 }
 
-@media screen and (min-width: 500px) { html { font-size: 10px } }
-@media screen and (min-width: 600px) { html { font-size: 12px } }
-@media screen and (min-width: 800px) { html { font-size: 14px } }
+@media screen and (min-width: 500px) { html { font-size: 12px } }
+@media screen and (min-width: 600px) { html { font-size: 14px } }
+@media screen and (min-width: 800px) { html { font-size: 15px } }
 @media screen and (min-width: 1300px) { html { font-size: 16px } }
-@media screen and (min-width: 1800px) { html { font-size: 19px } }
+@media screen and (min-width: 1800px) { html { font-size: 20px } }
 
 body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font: 1em/1.2 Tahoma, Geneva, sans-serif;
+	font: 1em/1.2 PT Sans, Geneva, sans-serif;	
 	margin: 1em 0 0.5em 0;
 	padding: 0;
 }

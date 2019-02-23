@@ -1,0 +1,14 @@
+pt sans
+
+	max-width: 1300px;
+	
+	/*pointer-event none
+	line-height: 3em - разстоянието като падинг все едно
+
+	@media (hover:hover) - дали поддържа hover device
+	@media (hover:none){
+		.site-header nav ul ul{
+			padding: 0 0 1rem 1rem;
+		}
+	}
+	*/
