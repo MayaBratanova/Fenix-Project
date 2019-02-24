@@ -1,0 +1,24 @@
+{
+  "name": "Storypalace",
+  "version": "0.9.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "currency-flags": "git+https://github.com/transferwise/currency-flags.git",
+    "npm": "^6.0.0"
+  },
+  "devDependencies": {
+    "gulp": "",
+    "gulp-autoprefixer": "",
+    "gulp-csso": "",
+    "gulp-load-plugins": "",
+    "gulp-sass": "",
+    "gulp-size": "",
+    "gulp-sourcemaps": "",
+    "gulp-util": "",
+    "browser-sync": ""
+  },
+  "scripts": {},
+  "author": "Konstantin Dankov",
+  "license": "ISC"
+}

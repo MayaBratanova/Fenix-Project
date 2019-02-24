@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i&subset=cyrillic,cyrillic-ext,latin-ext');
+
 html {
 	font: 12px/1.5 PT Sans, Geneva, sans-serif;	
 }
 
-@media screen and (min-width: 500px) { html { font-size: 12px } }
-@media screen and (min-width: 600px) { html { font-size: 14px } }
-@media screen and (min-width: 800px) { html { font-size: 15px } }
-@media screen and (min-width: 1300px) { html { font-size: 16px } }
-@media screen and (min-width: 1800px) { html { font-size: 20px } }
+@include bp(phone) {
+	html { font-size: 12px; }
+}
 
-body {
+@include bp(tablet) {
+	html { font-size: 14px };
+}
+
+@include bp(desktop) {
+	html { font-size: 16px };
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,7 +29,7 @@ h4 { font-size: 1.6rem; }
 h5 { font-size: 1.4rem; }
 h6 { font-size: 1.2rem; }
 
-/*p {
+p {
 	margin: 0;
 	padding-bottom: 1.5rem;
 }
@@ -51,7 +55,7 @@ ul ul {
 ul li { list-style-type: square; }
 ul ul li { list-style-type: disc; }
 ul ul ul li { list-style-type: circle; }
-*/
+
 blockquote {
 	border-left: 4px solid #DDD;
 	font-style: italic;
@@ -65,12 +69,6 @@ blockquote {
 
 blockquote .author {
 	text-align: right;
-}
-
-@media screen and (min-width: 500px) { 
-	blockquote {
-		width: 40%;
-	}
 }
 
 table {
@@ -104,32 +102,4 @@ table tr:hover td {
 
 hr {
 	margin: 2rem 0;
-}
-
-img[class^="align-"] {
-	padding: 0.5rem;
-	background: #FFF;
-	border: 3px solid #222;
-	box-shadow: 0 0 5rem 0.1rem rgba(0,0,0,0.25);
-}
-
-@media screen and (max-width: 500px) { 
-	img[class^="align-"] {
-		display: block;
-		margin: 1.5rem 0;
-	}
-}
-
-@media screen and (min-width: 500px) { 
-
-	.align-left {
-		float: left;
-		margin: 0 1.5rem 1rem 0;
-	}
-
-	.align-right {
-		float: right;
-		margin: 0 0 1rem 1.5rem;
-	}
-
 }
