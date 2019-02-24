@@ -1,11 +1,12 @@
 header {	
     padding: 0;
-    position: fixed;
+    /* position: fixed; */
     background: #000;
     right: 0;
     left: 0;    
     margin-bottom: 0;
-    top: 0
+    top: 0;
+    z-index: 2;
 }
 
 .header-container {
@@ -14,7 +15,9 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  align-content: center;  
+  position: relative;
+ 
 }
 
 .header-text-container {
@@ -128,9 +131,62 @@ nav.main ul li:hover > a {
 	font-weight: bold;*/
 }
 
-.search-icon-container {
+form .search-form{
+  position: relative;
+  top: 50%;
+  left: 50%;  
+  width: 50px;
+  height: 50px;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: 4px solid white;
+  padding: 5px;
+  width: 5%;
 }
-.search-icon {
+
+input[type="search"]{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 42.5px;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  display: none;
+  font-size: 1em;
+  border-radius: 20px;
+  padding: 0 3em 0 1em;
+  
+}
+
+.fa-search{
+  box-sizing: border-box;
+  padding: 10px;
+  width: 42.5px;
+  height: 42.5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.2em;
+  
+}
+
+.search-form:hover{  
+  cursor: pointer;
+}
+
+.search-form:hover input{
+  display: block;
+}
+
+.search-form:hover .fa-search{
+  background: #f47624;
+  color: white;
 }
 
 @media screen and (max-width: 800px) /* екран до 800px */{
@@ -164,7 +220,8 @@ nav.main ul li:hover > a {
   #main-nav-toggle:checked + header #toggle:before {
     /*content: 'X';*/
   }
-  .search-icon-container {
+
+  .fa-search {
     display: none;
   }
 
